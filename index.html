@@ -50,6 +50,14 @@
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
 
             <!-- Main title -->
 
@@ -58,6 +66,22 @@
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="about.md">About</a>
+                    </li>
+                
+                
+                </ul>
 
             <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -85,6 +109,7 @@
         <li class="first-level "><a href="#comunicacao-atraves-de-propriedades-props">Comunicação através de propriedades (props)</a></li>
         <li class="first-level "><a href="#passando-dados-para-o-componente-pai-emissao">Passando dados para o componente pai (emissão)</a></li>
         <li class="first-level "><a href="#o-que-e-um-bind-em-vue">O que é um bind em vue</a></li>
+        <li class="first-level "><a href="#axios-no-vuejs">Axios no VueJs</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -94,7 +119,9 @@
 <li><code>pipenv shell</code> - Para entrar em um ambiente virtual.</li>
 <li><code>pipenv install mkdocs</code> - Instalar mkdocs.</li>
 <li><code>mkdocs new [dir-name]</code> - Criar novo projeto.</li>
+<li><code>pipenv install mkdocs-[nome-do-tema]</code> - Instalar tema para o mkdocs.</li>
 <li><code>mkdocs serve</code> - Iniciar servidor de desenvolvimento.</li>
+<li><code>mkdocs build</code> - Fazer build.</li>
 <li><code>mkdocs gh-deploy</code> - Fazer deploy.</li>
 </ul>
 <h2 id="vuetify">Vuetify</h2>
@@ -123,7 +150,22 @@
 <h2 id="passando-dados-para-o-componente-pai-emissao">Passando dados para o componente pai (<code>emissão</code>)</h2>
 <p>Como no Vue o fluxo de dados é unilateral e as propriedades não podem ser passadas para o componente pai. Então podemos usufruir do sistemas de eventos personalizados do Vue, para podermos emitir eventos para o componente pai através do <code>$emit</code>, assim subindo níveis e podendo passar dados.</p>
 <h2 id="o-que-e-um-bind-em-vue">O que é um bind em vue</h2>
-<p>Serve para ligar a um atributo (pode ser <code>v-bind</code> ou <code>:</code>).</p></div>
+<p>Serve para ligar a um atributo (pode ser <code>v-bind</code> ou <code>:</code>).</p>
+<h2 id="axios-no-vuejs">Axios no VueJs</h2>
+<ul>
+<li><code>vue add axios</code> - Para adicionar ao seu projeto vue.</li>
+</ul>
+<p>
+ Agora iremos fazer uma breve configuração para não ficarmos repetindo a url de requisição. Para isso você irá criar um arquivo chamado  <code>.env.local</code> e dentro do arquivo irá escrever os sguintes comandos:       
+ <code>
+  VUE_APP_BASE_URL=http://sua-url-de-requisição
+</code>
+<p> Logo em seguida dentro do arquivo de configuração passar o seguinte código:
+  <pre><code>let config = {
+  baseURL: process.env.VUE_APP_BASE_URL
+}
+</code></pre>
+</p></div>
         
         
     </div>
@@ -132,6 +174,8 @@
         
         <hr>
         <p>
+        <small>Michael Douglas 2020 &copy <a href='https://github.com/michaeldouglas02'>GitHub<br><br></small>
+        
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
 
         
@@ -215,5 +259,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2020-01-03 17:29:03
+Build Date UTC : 2020-01-03 18:15:00
 -->
