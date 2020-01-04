@@ -355,7 +355,7 @@ Como muitas coisas na vida, o Git começou com um pouco de destruição criativa
 </ul>
 <p>Desde seu nascimento em 2005, Git evoluiu e amadureceu para ser fácil de usar e ainda reter essas qualidades iniciais. Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos para desenvolvimento não linear.</p>
 <p><a href="https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git">Clique aqui para acessar essa história</a>.</p>
-<h1 id="iniciando-com-git">Iniciando com git</h1>
+<h1 id="primeiros-passos">Primeiros passos</h1>
 <p><p>Primeiramente iremos instalar o git, no meu caso utilizo o sistema operacional linux mint e para este deve ser utilizado o seguinte comando:</p>
 <code>sudo apt install git</code>
 <p>Se você utiliza outro sistema operacional acesse:</p></p>
@@ -366,6 +366,32 @@ Como muitas coisas na vida, o Git começou com um pouco de destruição criativa
 <p>E se você achar que não deu certo só porque não apareceu nada no seu terminal você está errado. Confiem em mim kkkk, o user name  já está configurado. Agora vamos configurar o email, se liga no comando abaixo:</p>
 <code>git config --global user.email "Digite aqui seu email"</code>
 <p>Agora para realmente saber se tudo deu certo digite: <code>git config user.name</code> que deverá retornar o nome do usuário. E do email fica como tarefa hahaa.</p>
+<h2 id="inicializando-um-repositorio">Inicializando um repositório</h2>
+<p>A primeira etapa para utilização do git, é você definir o seu Working Directory(Diretório de trabalho). Para isso existem várias formas. Vamos as duas principais:</p>
+<p>Para novos projetos, onde você ira iniciar e enviar os arquivos locais existentes para um repositório vazio, vamos utilizar os seguintes comandos:</p>
+<pre><code class="git">git init
+git add remote origin seurepositorio
+</code></pre>
+
+<p>Para projetos que já existem no servidor, você ira utilizar os seguintes comandos:</p>
+<pre><code class="git">git clone seurepositorio
+</code></pre>
+
+<h2 id="adicionando-arquivos">Adicionando arquivos</h2>
+<p>O primeiro comando que precisamos utilizar é para adicionar arquivos ao seu WorkTree. O comando git é <code>git add</code>. Vamos aos exemplos:</p>
+<p>Adicionar o arquivo <code>readme.md</code> : <code>git add readme.md</code><br />
+Adicionar todos arquivos <code>js</code> : <code>git add .js</code><br />
+Adicionar todos os <code>arquivos</code> : <code>git add .</code>  </p>
+<h2 id="commitando-as-alteracoes">Commitando as alterações</h2>
+<p>Após adicionar os arquivos, precisamos informar as alterações,  mensagens que eles sofreram. Para isso vamos utilizar o comando <code>git commit</code>. Vamos aos exemplos:</p>
+<p>Enviando o primeiro commit: <code>git commit -m "Primeiro commit"</code><br>
+Commit de uma aleração: <code>git commit -m "Foi alterado tal coisa"</code></p>
+<h2 id="enviando-as-alteacoes-para-o-servidor">Enviando as alteações para o servidor</h2>
+<p>Após definir seus commits, precisamos enviar os mesmos para o servidor. Para isso utilizamos o comando <code>git push</code></p>
+<p>Comando padrão para enviar <code>git push -u origin SEUBRANCH</code></p>
+<p><em>o parâmetro -u indica o usuário que está no git config</em>
+<em>o paramentro origin indica que irá para a origem no proximo parâmetro</em>
+<em>SEUBRANCH indica o branch que você esta trabalhando</em>.</p>
                 
                   
                 
