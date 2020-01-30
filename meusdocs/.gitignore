@@ -1,0 +1,4 @@
+.history
+../site
+Pipfile
+    *.lock

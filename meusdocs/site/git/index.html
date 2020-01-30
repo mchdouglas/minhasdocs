@@ -1,0 +1,722 @@
+
+
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Git - Meus Documentos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#fb8c00">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="orange" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#git" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Meus Documentos" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">cloud</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Meus Documentos
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Git
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/mchdouglas/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Michael Douglas
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Meus Documentos" class="md-nav__button md-logo">
+      
+        <i class="md-icon">cloud</i>
+      
+    </a>
+    Meus Documentos
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/mchdouglas/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Michael Douglas
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Começando com mkdocs/" title="Começando com mkdocs" class="md-nav__link">
+      Começando com mkdocs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../axiosVue/" title="axiosVue" class="md-nav__link">
+      axiosVue
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Git
+      </label>
+    
+    <a href="./" title="Git" class="md-nav__link md-nav__link--active">
+      Git
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vamooos-nessaaa" class="md-nav__link">
+    Vamooos nessaaa!!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uma-breve-historia-do-git" class="md-nav__link">
+    Uma Breve História do Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-inicial" class="md-nav__link">
+    Configuração inicial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inicializando-um-repositorio" class="md-nav__link">
+    Inicializando um repositório
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adicionando-arquivos" class="md-nav__link">
+    Adicionando arquivos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commitando-as-alteracoes" class="md-nav__link">
+    Commitando as alterações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enviando-as-alteacoes-para-o-servidor" class="md-nav__link">
+    Enviando as alteações para o servidor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gerando-a-chave-ssh" class="md-nav__link">
+    Gerando a chave ssh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vinculando-ao-github" class="md-nav__link">
+    Vinculando ao Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alguns-problemas" class="md-nav__link">
+    Alguns problemas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../vue/" title="Vue" class="md-nav__link">
+      Vue
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../vuetify/" title="Vuetify" class="md-nav__link">
+      Vuetify
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vamooos-nessaaa" class="md-nav__link">
+    Vamooos nessaaa!!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uma-breve-historia-do-git" class="md-nav__link">
+    Uma Breve História do Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-inicial" class="md-nav__link">
+    Configuração inicial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inicializando-um-repositorio" class="md-nav__link">
+    Inicializando um repositório
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adicionando-arquivos" class="md-nav__link">
+    Adicionando arquivos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commitando-as-alteracoes" class="md-nav__link">
+    Commitando as alterações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enviando-as-alteacoes-para-o-servidor" class="md-nav__link">
+    Enviando as alteações para o servidor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gerando-a-chave-ssh" class="md-nav__link">
+    Gerando a chave ssh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vinculando-ao-github" class="md-nav__link">
+    Vinculando ao Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alguns-problemas" class="md-nav__link">
+    Alguns problemas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/mchdouglas/edit/master/docs/git.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Git</h1>
+                
+                <h2 id="git">Git</h2>
+<p>Se você caiu nesta documentação provavelmente criou vergonha na cara e decidiu aprender sobre o git (na verdade isso é mais um tutorial do que uma documentação, que serve tanto para eu aprender a passar meus conhecimentos como para você que está lendo aprender). </p>
+
+<h2 id="vamooos-nessaaa">Vamooos nessaaa!!</h2>
+<p>Antes de começarmos e sairmos digitando comandos que nem loucos, vamos a uma breve e chata(porém importante) história sobre o git.</p>
+
+<h2 id="uma-breve-historia-do-git">Uma Breve História do Git</h2>
+<p>Uma Breve História do Git
+Como muitas coisas na vida, o Git começou com um pouco de destruição criativa e uma controvérsia de fogo.
+
+O núcleo (kernel) do Linux é um projeto de código aberto com um escopo bastante grande. A maior parte da vida da manutenção do núcleo o Linux (1991-2002), as mudanças no código eram compartilhadas como correções e arquivos. Em 2002, o projeto do núcleo do Linux começou usar uma DVCS proprietária chamada BitKeeper.
+
+Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu BitKeeper quebrou em pedaços, e a ferramenta passou a ser paga. Isto alertou a comunidade que desenvolvia o Linux (e especialmente Linux Torvalds, o criador do Linux) a desenvolver a sua própria ferramente baseada em lições aprendidas ao usar o BitKeeper. Algumas metas do novo sistema era os seguintes:
+
+- Velocidade
+
+- Projeto simples
+
+- Forte suporte para desenvolvimento não-linear (milhares de ramos paralelos)
+
+- Completamente distribuído
+
+- Capaz de lidar com projetos grandes como o núcleo o Linux com eficiência (velocidade e tamanho dos dados)
+
+Desde seu nascimento em 2005, Git evoluiu e amadureceu para ser fácil de usar e ainda reter essas qualidades iniciais. Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos para desenvolvimento não linear.
+
+[Clique aqui para acessar essa história](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git).
+
+# Primeiros passos
+
+<p>Primeiramente iremos instalar o git, no meu caso utilizo o sistema operacional linux mint e para este deve ser utilizado o seguinte comando:</p>
+<code>sudo apt install git</code>
+<p>Se você utiliza outro sistema operacional acesse:</p>
+
+<p><a href="https://git-scm.com/downloads">esse guia de downloads</a></p>
+<h2 id="configuracao-inicial">Configuração inicial</h2>
+<p>Seguidamente utilizaremos o <code>git config</code> para a configuração do nome do usuário e do email.Abram o terminal e digitem:</p>
+
+<p><code>git config --global user.name "Digite aqui seu nome de usuário"</code>
+<p>E se você achar que não deu certo só porque não apareceu nada no seu terminal você está errado. Confiem em mim kkkk, o user name  já está configurado. Agora vamos configurar o email, se liga no comando abaixo:</p>
+<code>git config --global user.email "Digite aqui seu email"</code>
+<p>Agora para realmente saber se tudo deu certo digite: <code>git config user.name</code> que deverá retornar o nome do usuário. E do email fica como tarefa hahaa.</p>
+<h2 id="inicializando-um-repositorio">Inicializando um repositório</h2>
+<p>A primeira etapa para utilização do git, é você definir o seu Working Directory(Diretório de trabalho). Para isso existem várias formas. Vamos as duas principais:</p>
+<p>Para novos projetos, onde você ira iniciar e enviar os arquivos locais existentes para um repositório vazio, vamos utilizar os seguintes comandos:</p>
+<pre><code class="git">git init
+git add remote origin seurepositorio
+</code></pre>
+
+<p>Para projetos que já existem no servidor, você ira utilizar os seguintes comandos:</p>
+<pre><code class="git">git clone seurepositorio
+</code></pre>
+
+<h2 id="adicionando-arquivos">Adicionando arquivos</h2>
+<p>O primeiro comando que precisamos utilizar é para adicionar arquivos ao seu WorkTree. O comando git é <code>git add</code>. Vamos aos exemplos:</p>
+<p>Adicionar o arquivo <code>readme.md</code> : <code>git add readme.md</code><br />
+Adicionar todos arquivos <code>js</code> : <code>git add .js</code><br />
+Adicionar todos os <code>arquivos</code> : <code>git add .</code></p>
+<h2 id="commitando-as-alteracoes">Commitando as alterações</h2>
+<p>Após adicionar os arquivos, precisamos informar as alterações, mensagens que eles sofreram. Para isso vamos utilizar o comando <code>git commit</code>. Vamos aos exemplos:</p>
+<p>Enviando o primeiro commit: <code>git commit -m "Primeiro commit"</code><br>
+Commit de uma aleração: <code>git commit -m "Foi alterado tal coisa"</code></p>
+<h2 id="enviando-as-alteacoes-para-o-servidor">Enviando as alteações para o servidor</h2>
+<p>Após definir seus commits, precisamos enviar os mesmos para o servidor. Para isso utilizamos o comando <code>git push</code></p>
+<p>Comando padrão para enviar <code>git push -u origin SEUBRANCH</code></p>
+<p><em>o parâmetro -u indica o usuário que está no git config</em>
+<em>o paramentro origin indica que irá para a origem no proximo parâmetro</em>
+<em>SEUBRANCH indica o branch que você esta trabalhando</em>.</p>
+<h2 id="extras">Extras</h2>
+<p>As vezes ficar digitando a senha toda vez que for dar um push pode ser um pouco cansativo.Para isso existe uma configuração de chave ssh que pode te ajudar muito com essa situação. Então siga as instruções abaixo para gerar uma chave ssh e adicioná-la no seu github.</p>
+<h3 id="gerando-a-chave-ssh">Gerando a chave ssh</h3>
+<p>Primeiramente abra o terminal e cole o seguinte comando:
+<code>ssh-keygen -t rsa -b 4096 -C "seu-emaill@examplo.com"</code>. E
+se aparecer algumas perguntas só vai dando enter (são configurações desnecessárias).<br>Pronto agora sua chave foi gerada e para acessá-la digite <code>cd ~/.ssh</code>.</p>
+<h3 id="vinculando-ao-github">Vinculando ao Github</h3>
+<p>Agora basta copiar a chave publica dentro do diretoŕio que você acessou o arquivo tem o seguinte nome <code>id_rsa.pub</code>. <br>
+Depois de ter copiado o conteúdo do arquivo basta acessar sua conta no github ir nas configurações e procurar por SSH and GPG keys, vai em New SSH Key, feito isso aparecerá pra você dar um título para sua chave e bem abaixo um campo para colar ela.
+Feito isso está tudo configurado.<br>
+Para saber se está tudo certo digite o seguinte comando para testar: <code>ssh -T git@github.com</code> se retornar com seu username e uma mensagem de sucesso está tudo correto. Parabéns você sabe ler uma documentação kkkk.</p>
+<h3 id="alguns-problemas">Alguns problemas</h3>
+<p>As vezes você já deve ter um repositório conectado por https, e não por SSH. Para ver na qual está conectado digite <code>git remote -v</code>, se retornar algo como <code>origin https://github.com/......</code> você está usando o serviço de http e para funcionar o ssh você precisa remover esse controle remoto com <code>git remote rm origin</code>, logo em seguida copie o link SSH e adicone como novo controle remoto com o seguinte comando <code>git remote add origin &lt;link_ssh_copiado&gt;</code>.<br> Se você segui a risca essa documentação tudo deverá estar funcionando. Você pode encontar esse tutorial <a href="https://stackoverflow.com/questions/33880832/github-ssh-key-claiming-it-is-not-used">aqui</a>.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../axiosVue/" title="axiosVue" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                axiosVue
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../vue/" title="Vue" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Vue
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Michael Douglas 2020 &copy; todos os direiros reservados
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/mchdouglas" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://www.linkedin.com/in/michael-douglas-b1125619b/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
