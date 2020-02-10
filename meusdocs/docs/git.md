@@ -102,8 +102,8 @@ se aparecer algumas perguntas só vai dando enter (são configurações desneces
 Agora basta copiar a chave publica dentro do diretoŕio que você acessou o arquivo tem o seguinte nome `id_rsa.pub`. <br>
 Depois de ter copiado o conteúdo do arquivo basta acessar sua conta no github ir nas configurações e procurar por SSH and GPG keys, vai em New SSH Key, feito isso aparecerá pra você dar um título para sua chave e bem abaixo um campo para colar ela.
 Feito isso está tudo configurado.<br>
-Para saber se está tudo certo digite o seguinte comando para testar: `ssh -T git@github.com` se retornar com seu username e uma mensagem de sucesso está tudo correto. Parabéns você sabe ler uma documentação kkkk.
+Para saber se está tudo certo digite o seguinte comando para testar: `ssh -T git@github.com` se retornar com seu username e uma mensagem de sucesso está tudo correto.
 
 ### Alguns problemas
 
-As vezes você já deve ter um repositório conectado por https, e não por SSH. Para ver na qual está conectado digite `git remote -v`, se retornar algo como `origin https://github.com/......` você está usando o serviço de http e para funcionar o ssh você precisa remover esse controle remoto com `git remote rm origin`, logo em seguida copie o link SSH e adicone como novo controle remoto com o seguinte comando `git remote add origin <link_ssh_copiado>`.<br> Se você segui a risca essa documentação tudo deverá estar funcionando. Você pode encontar esse tutorial [aqui](https://stackoverflow.com/questions/33880832/github-ssh-key-claiming-it-is-not-used).
+As vezes você já deve ter um repositório conectado por https, e não por SSH. Para ver na qual está conectado digite `git remote -v`, se retornar algo como `origin https://github.com/......` você está usando o serviço de http e para funcionar o ssh você precisa remover esse controle remoto com `git remote rm origin`, logo em seguida copie o `link SSH` e adicone como novo controle remoto com o seguinte comando `git remote add origin <link_ssh_copiado>`.<br> Tudo deverá estar funcionando. Você pode encontrar esse tutorial [aqui](https://stackoverflow.com/questions/33880832/github-ssh-key-claiming-it-is-not-used).
