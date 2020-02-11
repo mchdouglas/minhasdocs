@@ -6,31 +6,7 @@
 
 <p>Antes de começarmos e sairmos digitando comandos que nem loucos, vamos a uma breve e chata(porém importante) história sobre o git.</p>
 
-## Uma Breve História do Git
-
-<p>Uma Breve História do Git
-Como muitas coisas na vida, o Git começou com um pouco de destruição criativa e uma controvérsia de fogo.
-
-O núcleo (kernel) do Linux é um projeto de código aberto com um escopo bastante grande. A maior parte da vida da manutenção do núcleo o Linux (1991-2002), as mudanças no código eram compartilhadas como correções e arquivos. Em 2002, o projeto do núcleo do Linux começou usar uma DVCS proprietária chamada BitKeeper.
-
-Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu BitKeeper quebrou em pedaços, e a ferramenta passou a ser paga. Isto alertou a comunidade que desenvolvia o Linux (e especialmente Linux Torvalds, o criador do Linux) a desenvolver a sua própria ferramente baseada em lições aprendidas ao usar o BitKeeper. Algumas metas do novo sistema era os seguintes:
-
-- Velocidade
-
-- Projeto simples
-
-- Forte suporte para desenvolvimento não-linear (milhares de ramos paralelos)
-
-- Completamente distribuído
-
-- Capaz de lidar com projetos grandes como o núcleo o Linux com eficiência (velocidade e tamanho dos dados)
-
-Desde seu nascimento em 2005, Git evoluiu e amadureceu para ser fácil de usar e ainda reter essas qualidades iniciais. Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos para desenvolvimento não linear.
-
-[Clique aqui para acessar essa história](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git) . 
-
-
-# Primeiros passos
+## Primeiros passos
 
 <p>Primeiramente iremos instalar o git, no meu caso utilizo o sistema operacional linux mint e para este deve ser utilizado o seguinte comando:</p>
 <code>sudo apt install git</code>
