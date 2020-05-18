@@ -2,10 +2,6 @@
 
 <p>Se você caiu nesta documentação provavelmente criou vergonha na cara e decidiu aprender sobre o git (na verdade isso é mais um tutorial do que uma documentação, que serve tanto para eu aprender a passar meus conhecimentos como para você que está lendo aprender). </p>
 
-## Vamooos nessaaa!!
-
-<p>Antes de começarmos e sairmos digitando comandos que nem loucos, vamos a uma breve e chata(porém importante) história sobre o git.</p>
-
 ## Primeiros passos
 
 <p>Primeiramente iremos instalar o git, no meu caso utilizo o sistema operacional linux mint e para este deve ser utilizado o seguinte comando:</p>
