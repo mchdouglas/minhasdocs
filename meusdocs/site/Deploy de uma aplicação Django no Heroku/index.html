@@ -15,7 +15,7 @@
     
     
       
-        <title>Git - Meus Documentos</title>
+        <title>Deploy de um Projeto Django no HEROKU - Meus Documentos</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git" class="md-skip">
+        <a href="#deploy-de-um-projeto-django-no-heroku" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Git
+              Deploy de um Projeto Django no HEROKU
             
           </span>
         </div>
@@ -208,11 +208,87 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Deploy%20de%20uma%20aplica%C3%A7%C3%A3o%20Django%20no%20Heroku/" title="Deploy de um Projeto Django no HEROKU" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Deploy de um Projeto Django no HEROKU
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Deploy de um Projeto Django no HEROKU" class="md-nav__link md-nav__link--active">
       Deploy de um Projeto Django no HEROKU
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#este-e-um-guia-para-quem-ja-tem-um-projeto-django-e-deseja-coloca-lo-em-producao" class="md-nav__link">
+    Este é um guia para quem já tem um projeto Django e deseja colocá-lo em produção.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacao-do-ambiente" class="md-nav__link">
+    Preparação do ambiente
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparação do ambiente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detalhando-as-dependencias" class="md-nav__link">
+    Detalhando as dependências
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-o-projeto" class="md-nav__link">
+    Configurando o projeto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creditos" class="md-nav__link">
+    Créditos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -232,125 +308,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Git
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Git" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../git/" title="Git" class="md-nav__link">
       Git
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    Git
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#primeiros-passos" class="md-nav__link">
-    Primeiros passos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracao-inicial" class="md-nav__link">
-    Configuração inicial
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inicializando-um-repositorio" class="md-nav__link">
-    Inicializando um repositório
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adicionando-arquivos" class="md-nav__link">
-    Adicionando arquivos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commitando-as-alteracoes" class="md-nav__link">
-    Commitando as alterações
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enviando-as-alteacoes-para-o-servidor" class="md-nav__link">
-    Enviando as alteações para o servidor
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extras" class="md-nav__link">
-    Extras
-  </a>
-  
-    <nav class="md-nav" aria-label="Extras">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gerando-a-chave-ssh" class="md-nav__link">
-    Gerando a chave ssh
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vinculando-ao-github" class="md-nav__link">
-    Vinculando ao Github
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alguns-problemas" class="md-nav__link">
-    Alguns problemas
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -392,6 +354,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Índice">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -402,85 +366,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    Git
+  <a href="#este-e-um-guia-para-quem-ja-tem-um-projeto-django-e-deseja-coloca-lo-em-producao" class="md-nav__link">
+    Este é um guia para quem já tem um projeto Django e deseja colocá-lo em produção.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#primeiros-passos" class="md-nav__link">
-    Primeiros passos
+  <a href="#preparacao-do-ambiente" class="md-nav__link">
+    Preparação do ambiente
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracao-inicial" class="md-nav__link">
-    Configuração inicial
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inicializando-um-repositorio" class="md-nav__link">
-    Inicializando um repositório
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adicionando-arquivos" class="md-nav__link">
-    Adicionando arquivos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commitando-as-alteracoes" class="md-nav__link">
-    Commitando as alterações
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enviando-as-alteacoes-para-o-servidor" class="md-nav__link">
-    Enviando as alteações para o servidor
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extras" class="md-nav__link">
-    Extras
-  </a>
-  
-    <nav class="md-nav" aria-label="Extras">
+    <nav class="md-nav" aria-label="Preparação do ambiente">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gerando-a-chave-ssh" class="md-nav__link">
-    Gerando a chave ssh
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vinculando-ao-github" class="md-nav__link">
-    Vinculando ao Github
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alguns-problemas" class="md-nav__link">
-    Alguns problemas
+  <a href="#detalhando-as-dependencias" class="md-nav__link">
+    Detalhando as dependências
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-o-projeto" class="md-nav__link">
+    Configurando o projeto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creditos" class="md-nav__link">
+    Créditos
+  </a>
   
 </li>
       
@@ -496,7 +418,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mchdouglas/edit/master/docs/git.md" title="Editar esta página" class="md-content__button md-icon">
+                  <a href="https://github.com/mchdouglas/edit/master/docs/Deploy de uma aplicação Django no Heroku.md" title="Editar esta página" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -504,63 +426,159 @@
                   
                 
                 
-                  <h1>Git</h1>
-                
-                <h2 id="git">Git</h2>
-<p>Se você caiu nesta documentação provavelmente criou vergonha na cara e decidiu aprender sobre o git (na verdade isso é mais um tutorial do que uma documentação, que serve tanto para eu aprender a passar meus conhecimentos como para você que está lendo aprender). </p>
-
-<h2 id="primeiros-passos">Primeiros passos</h2>
-<p>Primeiramente iremos instalar o git, no meu caso utilizo o sistema operacional linux mint e para este deve ser utilizado o seguinte comando:</p>
-
-<p><code>sudo apt install git</code>
-<p>Se você utiliza outro sistema operacional acesse:</p></p>
-<p><a href="https://git-scm.com/downloads">esse guia de downloads</a></p>
-<h2 id="configuracao-inicial">Configuração inicial</h2>
-<p>Seguidamente utilizaremos o <code>git config</code> para a configuração do nome do usuário e do email.Abram o terminal e digitem:</p>
-
-<p><code>git config --global user.name "Digite aqui seu nome de usuário"</code>
-<p>E se você achar que não deu certo só porque não apareceu nada no seu terminal você está errado. Confiem em mim kkkk, o user name  já está configurado. Agora vamos configurar o email, se liga no comando abaixo:</p>
-<code>git config --global user.email "Digite aqui seu email"</code>
-<p>Agora para realmente saber se tudo deu certo digite: <code>git config user.name</code> que deverá retornar o nome do usuário. E do email fica como tarefa hahaa.</p>
-<h2 id="inicializando-um-repositorio">Inicializando um repositório</h2>
-<p>A primeira etapa para utilização do git, é você definir o seu Working Directory(Diretório de trabalho). Para isso existem várias formas. Vamos as duas principais:</p>
-<p>Para novos projetos, onde você ira iniciar e enviar os arquivos locais existentes para um repositório vazio, vamos utilizar os seguintes comandos:</p>
-<pre><code class="git">git init
-git add remote origin seurepositorio
+                <h1 id="deploy-de-um-projeto-django-no-heroku">Deploy de um Projeto Django no HEROKU</h1>
+<h2 id="este-e-um-guia-para-quem-ja-tem-um-projeto-django-e-deseja-coloca-lo-em-producao">Este é um guia para quem já tem um projeto Django e deseja colocá-lo em produção.</h2>
+<h2 id="preparacao-do-ambiente">Preparação do ambiente</h2>
+<ul>
+<li>Atualizar pip <code>pip install --upgrade pip</code></li>
+<li>Instalar dependencias <code>pip install django django-cors-headers django-extensions django-filter django-jet django-rest-auth djangorestframework dj-database-url dj-static python-decouple gunicorn psycopg2</code></li>
+</ul>
+<h3 id="detalhando-as-dependencias">Detalhando as dependências</h3>
+<ul>
+<li><strong>django</strong>: Framework para desenvolvimento web</li>
+<li><strong>django-cors-headers</strong>: Módulo para permitir acesso via cors (cross domain origin)</li>
+<li><strong>django-extensions</strong>: <em>dev</em>. Ativa extenções para desenvolvedor</li>
+<li><strong>django-filter</strong>: Módulo para utilizar filtros no django</li>
+<li><strong>django-jet</strong>: Template para o admin</li>
+<li><strong>django-rest-auth</strong>: Módulo para autenticação via REST</li>
+<li><strong>djangorestframework</strong>: Módulo para desenvolver apis REST</li>
+<li><strong>dj-database-url</strong>: Módulo para converter string de conexão em url</li>
+<li><strong>dj-static</strong>: Módulo para servir arquivos staticos</li>
+<li><strong>python-decouple</strong>: Módulo que ajuda na parte de seguraça da aplicação (utilizar parametros via arquivo .env)</li>
+<li><strong>gunicorn</strong>: Servidor web</li>
+<li><strong>psycopg2</strong>: Módulo de acesso ao postgres</li>
+</ul>
+<h2 id="configurando-o-projeto">Configurando o projeto</h2>
+<p>Primeiro, vamos salvar os módulos que nosso projeto necessita:<br />
+<code>pip freeze &gt; requirements.txt</code></p>
+<p>Agora iremos efetuar algumas configurações:</p>
+<p>Primeiro, vamos ao arquivo <code>settings.py</code>. Nele, iremos informar as chaves do projeto, conexão de banco de dados, caminhos, etc.</p>
+<p>Para aumentar a segurança, e remover desse arquivo dados de senha e chave, vamos utilizar o decouple. Para isso vamos criar o arquivo <code>.env</code></p>
+<p>Nele vamos informar os seguintes itens:</p>
+<pre><code>SECRET_KEY=Copiar chave secreta do seu settings.py
+DEBUG=True
 </code></pre>
 
-<p>Para projetos que já existem no servidor, você ira utilizar os seguintes comandos:</p>
-<pre><code class="git">git clone seurepositorio
+<p>Agora dentro do nosso <code>setting.py</code>, vamos efetuar os imports do decouple e dj-database-url, logo após o <code>import os</code>:</p>
+<pre><code class="python">from decouple import config
+from dj_database_url import parse as dburl
 </code></pre>
 
-<h2 id="adicionando-arquivos">Adicionando arquivos</h2>
-<p>O primeiro comando que precisamos utilizar é para adicionar arquivos ao seu WorkTree. O comando git é <code>git add</code>. Vamos aos exemplos:</p>
-<p>Adicionar o arquivo <code>readme.md</code> : <code>git add readme.md</code><br />
-Adicionar todos arquivos <code>js</code> : <code>git add .js</code><br />
-Adicionar todos os <code>arquivos</code> : <code>git add .</code></p>
-<h2 id="commitando-as-alteracoes">Commitando as alterações</h2>
-<p>Após adicionar os arquivos, precisamos informar as alterações, mensagens que eles sofreram. Para isso vamos utilizar o comando <code>git commit</code>. Vamos aos exemplos:</p>
-<p>Enviando o primeiro commit: <code>git commit -m "Primeiro commit"</code><br>
-Commit de uma aleração: <code>git commit -m "Foi alterado tal coisa"</code></p>
-<h2 id="enviando-as-alteacoes-para-o-servidor">Enviando as alteações para o servidor</h2>
-<p>Após definir seus commits, precisamos enviar os mesmos para o servidor. Para isso utilizamos o comando <code>git push</code></p>
-<p>Comando padrão para enviar <code>git push -u origin SEUBRANCH</code></p>
-<p><em>o parâmetro -u indica o usuário que está no git config</em>
-<em>o paramentro origin indica que irá para a origem no proximo parâmetro</em>
-<em>SEUBRANCH indica o branch que você esta trabalhando</em>.</p>
-<h2 id="extras">Extras</h2>
-<p>As vezes ficar digitando a senha toda vez que for dar um push pode ser um pouco cansativo.Para isso existe uma configuração de chave ssh que pode te ajudar muito com essa situação. Então siga as instruções abaixo para gerar uma chave ssh e adicioná-la no seu github.</p>
-<h3 id="gerando-a-chave-ssh">Gerando a chave ssh</h3>
-<p>Primeiramente abra o terminal e cole o seguinte comando:
-<code>ssh-keygen -t rsa -b 4096 -C "seu-emaill@examplo.com"</code>. E
-se aparecer algumas perguntas só vai dando enter (são configurações desnecessárias).<br>Pronto agora sua chave foi gerada e para acessá-la digite <code>cd ~/.ssh</code>.</p>
-<h3 id="vinculando-ao-github">Vinculando ao Github</h3>
-<p>Agora basta copiar a chave publica dentro do diretoŕio que você acessou o arquivo tem o seguinte nome <code>id_rsa.pub</code>. <br>
-Depois de ter copiado o conteúdo do arquivo basta acessar sua conta no github ir nas configurações e procurar por SSH and GPG keys, vai em New SSH Key, feito isso aparecerá pra você dar um título para sua chave e bem abaixo um campo para colar ela.
-Feito isso está tudo configurado.<br>
-Para saber se está tudo certo digite o seguinte comando para testar: <code>ssh -T git@github.com</code> se retornar com seu username e uma mensagem de sucesso está tudo correto.</p>
-<h3 id="alguns-problemas">Alguns problemas</h3>
-<p>As vezes você já deve ter um repositório conectado por https, e não por SSH. Para ver na qual está conectado digite <code>git remote -v</code>, se retornar algo como <code>origin https://github.com/......</code> você está usando o serviço de http e para funcionar o ssh você precisa remover esse controle remoto com <code>git remote rm origin</code>, logo em seguida copie o <code>link SSH</code> e adicone como novo controle remoto com o seguinte comando <code>git remote add origin &lt;link_ssh_copiado&gt;</code>.<br> Tudo deverá estar funcionando. Você pode encontrar esse tutorial <a href="https://stackoverflow.com/questions/33880832/github-ssh-key-claiming-it-is-not-used">aqui</a>.</p>
+<p>Agora vamos configurar nossas variáveis <code>SECRET_KEY</code> e <code>DEBUG</code> para obter as informações do arquivo <code>.env</code></p>
+<pre><code class="python"># arquivo settings.py
+SECRET_KEY = config('SECRET_KEY')
+
+DEBUG = DEBUG = config('DEBUG', default=False, cast=bool)
+</code></pre>
+
+<p>Em desenvolvimento, vamos usar o <code>sqlite</code>, então para configurá-lo, vamos criar uma variável, passando o valor padrão para caso não houver informações de conexão no arquivo</p>
+<pre><code class="python"># arquivo settings.py
+
+default_db_url = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+</code></pre>
+
+<p>A nossa string de conexão, irá ficar dessa forma:</p>
+<pre><code class="python"># arquivo settings.py
+
+DATABASES = {
+    'default': config('DATABASE_URL', default=default_db_url, cast=dburl)
+}
+</code></pre>
+
+<p>Agora vamos efetuar algumas outras configurações importantes como hosts permitidos para acessar, linguagem, timezone, local dos arquivos staticos e etc.</p>
+<pre><code class="python"># hosts
+ALLOWED_HOSTS = [
+    '*'
+]
+# tradução
+LANGUAGE_CODE = 'pt-br'
+# timestamp
+TIME_ZONE = 'America/Cuiaba'
+# desativa timezone
+USE_TZ = False
+# diretorio de arquivos staticos
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+</code></pre>
+
+<p>Feito isso, vamos adicionar algumas estruturas do HEROKU (aws):</p>
+<p>Para isso, vamos precisar criar o app no heroku, criar os arquivos Procfile, runtime.txt.</p>
+<p>Primeiro, precisamos informar quem vai servir os arquivos staticos no heroku, por isso utilizamos o módulo <code>dj-static</code>. Para isso, abra o arquivo <code>wsgi.py</code>:</p>
+<pre><code class="python">import os
+from dj_static import Cling
+
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault(&quot;DJANGO_SETTINGS_MODULE&quot;, &quot;atividades.settings&quot;)
+
+application = Cling(get_wsgi_application())
+</code></pre>
+
+<p>Agora, vamos criar o arquivo <code>Procfile</code>, que informa ao heroku como que as coisas vão acontecer:</p>
+<pre><code>web: gunicorn nomeprojeto.wsgi
+web: python manage.py runserver 0.0.0.0:$PORT
+</code></pre>
+
+<p>Agora, camos criar o arquivo <code>runtime.txt</code>, que informa qual versão do python vamos utilizar:</p>
+<pre><code>python-3.8.2
+</code></pre>
+
+<p>Feito isso, vamos preparar o git.</p>
+<p>Primeiro, iniciamos o repositório com o comando <code>git init</code> e depois vamos criar o arquivo <code>.gitignore</code>, para não enviarmos alguns arquivos.</p>
+<pre><code class="git">.DS_Store
+.env
+.idea
+.venv
+*.sqlite3
+*pyc
+__pycache__
+</code></pre>
+
+<p>Feito isso, vamos comitar os arquivos. Primeiro enviamos o .gitignore</p>
+<pre><code class="git">git add .gitignore
+git commit -m &quot;Add ignore config&quot;
+</code></pre>
+
+<p>Agora vamos enviar os arquivos de configuração do heroku</p>
+<pre><code class="git">git add Procfile runtime.txt
+git commit -m &quot;Heroku config&quot;
+</code></pre>
+
+<p>Agora vamos enviar os arquivos de migrações do banco
+* Obs: Antes de fizer isso rode as migrações localmente com <code>python manage.py makemigrations &amp;&amp; python manage.py migrate</code></p>
+<pre><code class="git">git add nome-do-projeto/migrations/*.py -f
+git commit -m &quot;Migration config&quot;
+</code></pre>
+
+<p>Agora, vamos importar o restante dos arquivos</p>
+<pre><code>git add .
+git commit -m &quot;Import project&quot;
+</code></pre>
+
+<p>Agora, vamos ao Heroku.</p>
+<p>Nessa etapa, precisamos criar o app, configurar as variaveis, e enviar os arquivos.</p>
+<p>Antes de começar, instale o heroku client para utilizar os comandos.</p>
+<p>Vamos criar e configurar o app:</p>
+<pre><code class="bash">heroku create nomeprojeto --buildpack heroku/python
+heroku addons:create heroku-postgresql:hobby-dev
+heroku pg:promote DATABASE_URL
+heroku plugins:install heroku-config
+heroku config:push
+</code></pre>
+
+<p>Feito isso, vamos enviar o projeto</p>
+<pre><code>git push heroku master
+</code></pre>
+
+<p>Pronto, projeto no ar!!!</p>
+<p>Após isso, vamos rodar as migrações e criar o usuario admin:</p>
+<pre><code>heroku run python manage.py migrate
+heroku run python manage.py createsuperuser
+</code></pre>
+
+<h2 id="creditos">Créditos</h2>
+<ul>
+<li>Este guia teve como base no tutorial do William Galleti <a href="http://wgalleti.io/desenvolvimento/pythondjango/heroku/">clique aqui para acessar o tutorial</a> .</li>
+</ul>
                 
               
               
@@ -579,7 +597,7 @@ Para saber se está tudo certo digite o seguinte comando para testar: <code>ssh 
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../axiosVue/" title="axiosVue" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Come%C3%A7ando%20com%20mkdocs/" title="Começando com mkdocs" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -588,19 +606,19 @@ Para saber se está tudo certo digite o seguinte comando para testar: <code>ssh 
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                axiosVue
+                Começando com mkdocs
               </div>
             </div>
           </a>
         
         
-          <a href="../vue/" title="Vue" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../axiosVue/" title="axiosVue" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Vue
+                axiosVue
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

@@ -2,13 +2,13 @@ site_name: Meus Documentos
 theme:
   name: 'material'
   palette:
-    primary: 'orange'
-    accent: 'blue'
+    primary: 'purple'
+    accent: 'amber'
   font:
     text: 'Ubuntu'
     code: 'Ubuntu Mono'
-  logo:
-    icon: 'cloud'
+#   logo:
+    logo: 'cloud'
   language: 'pt'
 extra:
   search:
@@ -18,9 +18,3 @@ feature:
 repo_name :  'Michael Douglas' 
 repo_url :  'https://github.com/mchdouglas'
 copyright: "Michael Douglas 2020 &copy; todos os direiros reservados"
-extra:
-  social:
-    - type: 'github'
-      link: 'https://github.com/mchdouglas'
-    - type: 'linkedin'
-      link: 'https://www.linkedin.com/in/michael-douglas-b1125619b/'
